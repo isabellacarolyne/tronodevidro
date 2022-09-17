@@ -27,9 +27,11 @@ ul {
   background-attachment: fixed;
   background-position: center;
   background-size: 100%;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   opacity: 0.3;
+  top: 0;
+  left: 0;
 }
 
 .sessao1 .titulo {
@@ -53,6 +55,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 320px;
 }
 
 .sessao1 .conteudo .informacoes li {
@@ -142,7 +145,8 @@ ul {
 /* Sessão 2 */
 
 .sessao2 {
-  padding: 0 10em;
+  padding: 2rem 10rem;
+  background-color: #fff;
 }
 
 .sessao2 h2 img {
@@ -185,4 +189,58 @@ footer {
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 1175px) {
+  .background {
+    background-size: auto 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sessao1 .titulo {
+    font-size: 3.5rem;
+    margin-bottom: 3vw;
+  }
+
+  .sessao1 .informacoes:nth-child(1) {
+    order: 1;
+    margin-top: 3rem;
+  }
+
+  .sessao1 .informacoes:nth-child(2) {
+    order: 0;
+  }
+
+  .sessao1 .informacoes:nth-child(3) {
+    order: 3;
+    margin-top: 3rem;
+  }
+
+  .background {
+  }
+
+  .sessao2 h2 img {
+    height: 2.5rem;
+  }
+
+  .sessao2 {
+    padding: 2rem 2em;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sessao3 .embed-container {
+    padding-bottom: 50%;
+    max-width: 90%;
+  }
+
+  footer {
+    margin-bottom: 2rem;
+  }
 }
