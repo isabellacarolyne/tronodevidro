@@ -104,9 +104,6 @@ ul {
   filter: drop-shadow(5px 5px 20px #222);
 }
 
-.sessao1 .conteudo .informacoes .lista-compras {
-}
-
 .sessao1 .conteudo .informacoes .lista-compras li {
   display: flex;
   background-color: #f9fcff;
